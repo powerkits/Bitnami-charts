@@ -16,5 +16,6 @@ jobs:
           charts_url: https://charts.robinjiang.com 
           branch: gh-pages
           target_dir: charts
+          index_dir: charts
           commit_username: robinjiang
           commit_email: me@robinjiang.com

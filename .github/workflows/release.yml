@@ -13,9 +13,7 @@ jobs:
         with:
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
           charts_dir: bitnami
-          charts_url: https://charts.robinjiang.com
-          owner: bitnami-robinjiang
-          repository: charts
+          charts_url: https://charts.robinjiang.com 
           branch: gh-pages
           target_dir: charts
           commit_username: robinjiang

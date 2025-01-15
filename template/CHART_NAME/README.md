@@ -7,7 +7,7 @@
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/bitnamicharts/%%CHART_NAME%%
+helm install my-release oci://docker.1ms.run/bitnamicharts/%%CHART_NAME%%
 ```
 
 Looking to use %%CHART_NAME%% in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.

@@ -30,7 +30,7 @@ extraDeploy:
           restartPolicy: OnFailure
           containers:
             - name: job-runner
-              image: docker.io/bitnami/flink:latest
+              image: docker.1ms.run/bitnami/flink:latest
               command:
                 - /bin/bash
               args:

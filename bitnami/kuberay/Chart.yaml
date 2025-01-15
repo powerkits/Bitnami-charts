@@ -6,16 +6,16 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: kuberay-apiserver
-      image: docker.io/bitnami/kuberay-apiserver:1.2.2-debian-12-r6
+      image: docker.1ms.run/bitnami/kuberay-apiserver:1.2.2-debian-12-r6
     - name: kuberay-operator
-      image: docker.io/bitnami/kuberay-operator:1.2.2-debian-12-r6
+      image: docker.1ms.run/bitnami/kuberay-operator:1.2.2-debian-12-r6
     - name: ray
-      image: docker.io/bitnami/ray:2.40.0-debian-12-r1
+      image: docker.1ms.run/bitnami/ray:2.40.0-debian-12-r1
 apiVersion: v2
 appVersion: 1.2.2
 dependencies:
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

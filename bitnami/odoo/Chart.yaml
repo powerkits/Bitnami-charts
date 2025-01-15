@@ -6,16 +6,16 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: odoo
-      image: docker.io/bitnami/odoo:18.0.20250105-debian-12-r0
+      image: docker.1ms.run/bitnami/odoo:18.0.20250105-debian-12-r0
 apiVersion: v2
 appVersion: 18.0.20250105
 dependencies:
 - condition: postgresql.enabled
   name: postgresql
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   version: 16.x.x
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

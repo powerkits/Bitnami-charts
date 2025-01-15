@@ -572,7 +572,7 @@ postgresql-ha: LDAP
     Invalid LDAP configuration. When enabling LDAP support, the parameters "ldap.uri",
     "ldap.basedn", "ldap.binddn", and "ldap.bindpw" are mandatory. Please provide them:
 
-    $ helm install {{ .Release.Name }} oci://registry-1.docker.io/bitnamicharts/postgresql-ha \
+    $ helm install {{ .Release.Name }} oci://docker.1ms.run/bitnamicharts/postgresql-ha \
       --set ldap.enabled=true \
       --set ldap.uri="ldap://my_ldap_server" \
       --set ldap.basedn="dc=example\,dc=org" \
@@ -597,7 +597,7 @@ postgresql-ha: LDAP & pg_hba.conf
 postgresql-ha: Upgrade repmgr extension
     There must be only one replica when upgrading repmgr extension:
 
-    $ helm upgrade {{ .Release.Name }} oci://registry-1.docker.io/bitnamicharts/postgresql-ha \
+    $ helm upgrade {{ .Release.Name }} oci://docker.1ms.run/bitnamicharts/postgresql-ha \
       --set postgresql.replicaCount=1 \
       --set postgresql.upgradeRepmgrExtension=true
 {{- end -}}

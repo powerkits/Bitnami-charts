@@ -510,7 +510,7 @@ jobs:
           # Set kubescape score threshold
           VIB_ENV_KUBESCAPE_SCORE_THRESHOLD: ${{ needs.chart-score.outputs.threshold }}
           # Set docker credentials
-          VIB_ENV_CHARTS_REGISTRY: oci://registry-1.docker.io/bitnamicharts
+          VIB_ENV_CHARTS_REGISTRY: oci://docker.1ms.run/bitnamicharts
           VIB_ENV_CHARTS_REGISTRY_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           VIB_ENV_CHARTS_REGISTRY_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
   auto-pr-review:

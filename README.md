@@ -17,7 +17,7 @@ Popular applications, provided by [Bitnami](https://bitnami.com), ready to launc
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/bitnamicharts/<chart>
+helm install my-release oci://docker.1ms.run/bitnamicharts/<chart>
 ```
 
 ## Vulnerabilities scanner
@@ -61,8 +61,8 @@ Please refer to the [Quick Start guide](https://helm.sh/docs/intro/quickstart/) 
 
 Useful Helm Client Commands:
 
-- Install a chart: `helm install my-release oci://registry-1.docker.io/bitnamicharts/<chart>`
-- Upgrade your application: `helm upgrade my-release oci://registry-1.docker.io/bitnamicharts/<chart>`
+- Install a chart: `helm install my-release oci://docker.1ms.run/bitnamicharts/<chart>`
+- Upgrade your application: `helm upgrade my-release oci://docker.1ms.run/bitnamicharts/<chart>`
 
 ## Announcing General Availability of Bitnami Premium
 

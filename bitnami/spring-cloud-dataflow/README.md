@@ -9,7 +9,7 @@ Spring Cloud Data Flow is a microservices-based toolkit for building streaming a
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/bitnamicharts/spring-cloud-dataflow
+helm install my-release oci://docker.1ms.run/bitnamicharts/spring-cloud-dataflow
 ```
 
 Looking to use Spring Cloud Data Flow in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.

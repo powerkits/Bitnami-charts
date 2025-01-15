@@ -33,7 +33,7 @@ service:
       targetPort: http
 sidecars:
   - name: nginx
-    image: docker.io/bitnami/nginx:1.25.2-debian-11-r5
+    image: docker.1ms.run/bitnami/nginx:1.25.2-debian-11-r5
     imagePullPolicy: Always
     ports:
       - name: web

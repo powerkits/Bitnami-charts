@@ -84,11 +84,11 @@ jobs:
             ## Update index
             # Download published asset
             mkdir ../download
-            helm pull "oci://registry-1.docker.io/bitnamicharts/${chart_name}" --version "${chart_version}" --destination ../download
+            helm pull "oci://docker.1ms.run/bitnamicharts/${chart_name}" --version "${chart_version}" --destination ../download
             # Rebuild index
-            helm repo index --url oci://registry-1.docker.io/bitnamicharts --merge bitnami/index.yaml ../download
+            helm repo index --url oci://docker.1ms.run/bitnamicharts --merge bitnami/index.yaml ../download
             # Replace .tgz in URL with OCI tag
-            sed -i "s|oci://registry-1.docker.io/bitnamicharts/$chart_name-$chart_version.tgz|oci://registry-1.docker.io/bitnamicharts/$chart_name:$chart_version|" ../download/index.yaml
+            sed -i "s|oci://docker.1ms.run/bitnamicharts/$chart_name-$chart_version.tgz|oci://docker.1ms.run/bitnamicharts/$chart_name:$chart_version|" ../download/index.yaml
 
             # Check index integrity
             if [[ $(stat -c%s bitnami/index.yaml) -gt $(stat -c%s ../download/index.yaml) ]]; then

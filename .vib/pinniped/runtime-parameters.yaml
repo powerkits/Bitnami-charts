@@ -81,7 +81,7 @@ extraDeploy:
       spec:
         containers:
           - name: openldap
-            image: docker.io/bitnami/openldap
+            image: docker.1ms.run/bitnami/openldap
             imagePullPolicy: Always
             ports:
               - name: openldap

@@ -6,20 +6,20 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: nessie
-      image: docker.io/bitnami/nessie:0.101.3-debian-12-r0
+      image: docker.1ms.run/bitnami/nessie:0.101.3-debian-12-r0
     - name: os-shell
-      image: docker.io/bitnami/os-shell:12-debian-12-r34
+      image: docker.1ms.run/bitnami/os-shell:12-debian-12-r34
     - name: postgresql
-      image: docker.io/bitnami/postgresql:17.2.0-debian-12-r3
+      image: docker.1ms.run/bitnami/postgresql:17.2.0-debian-12-r3
 apiVersion: v2
 appVersion: 0.101.3
 dependencies:
 - condition: postgresql.enabled
   name: postgresql
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   version: 16.x.x
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

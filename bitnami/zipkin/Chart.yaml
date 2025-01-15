@@ -6,18 +6,18 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: cassandra
-      image: docker.io/bitnami/cassandra:5.0.2-debian-12-r4
+      image: docker.1ms.run/bitnami/cassandra:5.0.2-debian-12-r4
     - name: zipkin
-      image: docker.io/bitnami/zipkin:3.4.4-debian-12-r0
+      image: docker.1ms.run/bitnami/zipkin:3.4.4-debian-12-r0
 apiVersion: v2
 appVersion: 3.4.4
 dependencies:
 - condition: cassandra.enabled
   name: cassandra
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   version: 12.x.x
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

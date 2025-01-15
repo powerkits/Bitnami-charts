@@ -6,18 +6,18 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: ejbca
-      image: docker.io/bitnami/ejbca:9.0.0-debian-12-r1
+      image: docker.1ms.run/bitnami/ejbca:9.0.0-debian-12-r1
 apiVersion: v2
 appVersion: 9.0.0
 dependencies:
 - condition: mariadb.enabled
   name: mariadb
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - ejbca-database
   version: 20.x.x
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

@@ -42,7 +42,7 @@ extraDeploy:
           restartPolicy: OnFailure
           containers:
             - name: nessie-job
-              image: docker.io/bitnami/nessie-utils:latest
+              image: docker.1ms.run/bitnami/nessie-utils:latest
               command:
                 - /bin/bash
               args:

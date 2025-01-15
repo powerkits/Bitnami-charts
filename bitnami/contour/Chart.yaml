@@ -6,16 +6,16 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: contour
-      image: docker.io/bitnami/contour:1.30.2-debian-12-r0
+      image: docker.1ms.run/bitnami/contour:1.30.2-debian-12-r0
     - name: envoy
-      image: docker.io/bitnami/envoy:1.31.5-debian-12-r0
+      image: docker.1ms.run/bitnami/envoy:1.31.5-debian-12-r0
     - name: nginx
-      image: docker.io/bitnami/nginx:1.27.3-debian-12-r5
+      image: docker.1ms.run/bitnami/nginx:1.27.3-debian-12-r5
 apiVersion: v2
 appVersion: 1.30.2
 dependencies:
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

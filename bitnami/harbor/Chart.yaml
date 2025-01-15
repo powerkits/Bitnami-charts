@@ -6,38 +6,38 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: harbor-adapter-trivy
-      image: docker.io/bitnami/harbor-adapter-trivy:2.12.1-debian-12-r0
+      image: docker.1ms.run/bitnami/harbor-adapter-trivy:2.12.1-debian-12-r0
     - name: harbor-core
-      image: docker.io/bitnami/harbor-core:2.12.1-debian-12-r0
+      image: docker.1ms.run/bitnami/harbor-core:2.12.1-debian-12-r0
     - name: harbor-exporter
-      image: docker.io/bitnami/harbor-exporter:2.12.1-debian-12-r0
+      image: docker.1ms.run/bitnami/harbor-exporter:2.12.1-debian-12-r0
     - name: harbor-jobservice
-      image: docker.io/bitnami/harbor-jobservice:2.12.1-debian-12-r0
+      image: docker.1ms.run/bitnami/harbor-jobservice:2.12.1-debian-12-r0
     - name: harbor-portal
-      image: docker.io/bitnami/harbor-portal:2.12.1-debian-12-r3
+      image: docker.1ms.run/bitnami/harbor-portal:2.12.1-debian-12-r3
     - name: harbor-registry
-      image: docker.io/bitnami/harbor-registry:2.12.1-debian-12-r0
+      image: docker.1ms.run/bitnami/harbor-registry:2.12.1-debian-12-r0
     - name: harbor-registryctl
-      image: docker.io/bitnami/harbor-registryctl:2.12.1-debian-12-r0
+      image: docker.1ms.run/bitnami/harbor-registryctl:2.12.1-debian-12-r0
     - name: nginx
-      image: docker.io/bitnami/nginx:1.27.3-debian-12-r2
+      image: docker.1ms.run/bitnami/nginx:1.27.3-debian-12-r2
     - name: os-shell
-      image: docker.io/bitnami/os-shell:12-debian-12-r34
+      image: docker.1ms.run/bitnami/os-shell:12-debian-12-r34
     - name: postgresql
-      image: docker.io/bitnami/postgresql:14.15.0-debian-12-r6
+      image: docker.1ms.run/bitnami/postgresql:14.15.0-debian-12-r6
 apiVersion: v2
 appVersion: 2.12.1
 dependencies:
 - condition: redis.enabled
   name: redis
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   version: 20.x.x
 - condition: postgresql.enabled
   name: postgresql
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   version: 16.x.x
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

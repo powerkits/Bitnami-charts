@@ -29,7 +29,7 @@ extraDeploy:
           restartPolicy: OnFailure
           containers:
             - name: zipkin-job
-              image: docker.io/bitnami/os-shell:latest
+              image: docker.1ms.run/bitnami/os-shell:latest
               command:
                 - /bin/bash
               args:

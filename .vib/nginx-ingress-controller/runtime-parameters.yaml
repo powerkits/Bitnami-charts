@@ -54,7 +54,7 @@ extraDeploy:
           app: dokuwiki
       spec:
         containers:
-        - image: docker.io/bitnami/dokuwiki:latest
+        - image: docker.1ms.run/bitnami/dokuwiki:latest
           name: dokuwiki
           securityContext:
             runAsNonRoot: true

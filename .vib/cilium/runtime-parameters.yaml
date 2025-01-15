@@ -102,7 +102,7 @@ extraDeploy:
         restartPolicy: OnFailure
         containers:
           - name: kubectl
-            image: docker.io/bitnami/kubectl:latest
+            image: docker.1ms.run/bitnami/kubectl:latest
             command:
               - /bin/bash
             args:

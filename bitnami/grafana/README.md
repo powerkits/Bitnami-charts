@@ -11,7 +11,7 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/bitnamicharts/grafana
+helm install my-release oci://docker.1ms.run/bitnamicharts/grafana
 ```
 
 Looking to use Grafana in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
@@ -317,7 +317,7 @@ spec:
         runAsUser: 1001
       containers:
         - name: grafana-image-renderer
-          image: docker.io/bitnami/grafana-image-renderer:3
+          image: docker.1ms.run/bitnami/grafana-image-renderer:3
           securityContext:
             runAsUser: 1001
           env:

@@ -6,16 +6,16 @@ annotations:
   licenses: Apache-2.0
   images: |
     - name: apache
-      image: docker.io/bitnami/apache:2.4.62-debian-12-r13
+      image: docker.1ms.run/bitnami/apache:2.4.62-debian-12-r13
     - name: apache-exporter
-      image: docker.io/bitnami/apache-exporter:1.0.9-debian-12-r6
+      image: docker.1ms.run/bitnami/apache-exporter:1.0.9-debian-12-r6
     - name: git
-      image: docker.io/bitnami/git:2.47.1-debian-12-r0
+      image: docker.1ms.run/bitnami/git:2.47.1-debian-12-r0
 apiVersion: v2
 appVersion: 2.4.62
 dependencies:
 - name: common
-  repository: oci://registry-1.docker.io/bitnamicharts
+  repository: oci://docker.1ms.run/bitnamicharts
   tags:
   - bitnami-common
   version: 2.x.x

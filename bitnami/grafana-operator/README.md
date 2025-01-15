@@ -11,7 +11,7 @@ Trademarks: This software listing is packaged by Bitnami. The respective tradema
 ## TL;DR
 
 ```console
-helm install my-release oci://registry-1.docker.io/bitnamicharts/grafana-operator
+helm install my-release oci://docker.1ms.run/bitnamicharts/grafana-operator
 ```
 
 Looking to use Grafana Operator in production? Try [VMware Tanzu Application Catalog](https://bitnami.com/enterprise), the commercial edition of the Bitnami catalog.
@@ -176,7 +176,7 @@ grafana:
   enabled: false
 extraDeploy:
   - apiVersion: integreatly.org/v1alpha1
-    baseImage: docker.io/bitnami/grafana:7
+    baseimage: docker.1ms.run/bitnami/grafana:7
     kind: Grafana
     metadata:
       name: grafana
